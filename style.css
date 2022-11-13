@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root{
+    --base: #000000;
+    --white: #FFFFFF;
+
+    --default-spacing: 7vw;
+
+    --accent-font: 'Monda';
+    --base-font: 'Nunito';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    overflow-x: hidden;
+    background-color: black;
+    color: var(--white);
+}
+
+ul{
+    margin: 0 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 0;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    font-family: var(--base-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 1rem 1.5rem;
+}
+
+button > a{
+    color: var(--base);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; 
+    padding: 3vw var(--default-spacing);
+}
+
+.hero{
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-image: url("./assets/hero-bg.jpg");
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: multiply;
+}
+
+.logo-container{
+    display: flex;
+}
+
+.logo-img{
+    font-size: 2rem;
+}
+
+.logo-text {
+    font-family: var(--accent-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.hero nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item{
+    padding: 0 2rem;
+    font-family: var(--base-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.nav-item > a{
+    color: var(--white);
+}
+
+.hero-main{
+    margin: 0 var(--default-spacing);
+    display: flex;
+    height: 100%;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    height: 100%
+}
+
+.hero-heading{
+    font-family: var(--accent-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 4rem;
+    color: var(--white); 
+}
+
+.hero-description{
+    font-family: var(--base-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white);
+    padding: 1.5rem 0;
+}
+
