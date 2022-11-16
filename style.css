@@ -175,6 +175,7 @@ nav{
 
 .section-header-container{
     height: 20vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -257,6 +258,48 @@ nav{
     color: var(--base);
 }
 
+.trips{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--default-spacing) 0px;
+}
+
+.trips-right{
+    width: 50vw;
+    padding-right: var(--default-spacing);
+}
+
+.promo-video{
+    width: 100%;
+    padding-top: var(--default-spacing);
+    min-width: 300px;
+}
+
+.trips-left{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.trips-left-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0 var(--default-spacing);
+}
+
+.trips-description{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
+    padding-bottom: 2vw;
+}
+
 @media only screen and (max-width: 1100px){
     .hero-main{
         flex-direction: column;
@@ -308,10 +351,34 @@ nav{
         padding: 0;
     }
 
+    .trips{
+        flex-direction: column;
+    }
+
+    .trips-right{
+        padding-right: 0;
+    }
+    
+    .trips-description{
+        text-align: center;
+    }
+
+    .trips-left-bottom{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trips-left{
+        width: 100%;
+    }
+
+    .trips-right{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 510px){
     .hero-heading{
-        line-height: 1.5rem; 
+        line-height: 2rem; 
     }
 }
