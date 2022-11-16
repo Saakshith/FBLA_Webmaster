@@ -353,6 +353,15 @@ nav{
     text-decoration: underline;
 }
 
+.vehicles{
+    height: 70vh;
+}
+
+footer{
+    padding: var(--default-spacing);
+    background: var(--white);
+}
+
 @media only screen and (max-width: 1100px){
     .hero-main{
         flex-direction: column;
