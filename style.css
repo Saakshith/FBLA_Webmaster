@@ -137,6 +137,16 @@ nav{
     padding: 1.5rem 0;
 }
 
+.hero-right{
+    width: 60%;
+    padding-left: 15vw;
+    padding-top: 5vw;
+}
+
+.hero-right > img{
+    width: 80%;
+    transform: scaleX(-1); 
+}
 
 .inner-cursor{
     position: fixed;
