@@ -307,7 +307,7 @@ nav{
     align-items: center;
     justify-content: center;
     padding: var(--default-spacing);
-    background: var(--white);
+    background-color: var(--base-lighter);
     gap: 10rem;
 }
 
@@ -326,12 +326,16 @@ nav{
     height: 100px;
 }
 
+.speedometer{
+    width: 150px;
+}
+
 .benefits-card-header{
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    color: var(--base);
+    color: var(--white);
     padding: 10px 0;
 }
 
@@ -340,7 +344,7 @@ nav{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    color: var(--base);
+    color: var(--white);
 }
 
 .benefits-card-link{
@@ -349,12 +353,8 @@ nav{
     font-weight: 400;
     font-size: 14px;
     padding: 10px 0;
-    color: rgba(0, 0, 0, 0.651);
+    color: rgba(255, 255, 255, 0.753);
     text-decoration: underline;
-}
-
-.vehicles{
-    height: fit-content;
 }
 
 
