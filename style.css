@@ -63,6 +63,7 @@ nav{
     background-position: center;
     background-color: rgba(0, 0, 0, 0.55);
     background-blend-mode: multiply;
+    overflow-x: hidden;
 }
 
 .logo-container > a{
@@ -594,5 +595,14 @@ footer{
 @media only screen and (max-width: 510px){
     .hero-heading{
         line-height: 2rem; 
+    }
+    .inner-cursor{
+        display: none;
+    }
+    .outer-cursor{
+        display: none;
+    }
+    body{
+        cursor: default;
     }
 }
