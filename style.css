@@ -114,7 +114,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 40%;
+    width: 40vw;
     /* height: 100%; */
 }
 
@@ -138,7 +138,7 @@ nav{
 }
 
 .hero-right{
-    width: 60%;
+    width: 60vw;
     padding-left: 15vw;
     padding-top: 5vw;
 }
@@ -614,5 +614,14 @@ footer{
     }
     body{
         cursor: default;
+    }
+
+    .hero-right{
+        padding: 0;
+    }
+
+    .hero-right > img{
+        width: 90vw;
+        height: 100%;
     }
 }
