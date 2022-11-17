@@ -354,12 +354,118 @@ nav{
 }
 
 .vehicles{
-    height: 70vh;
+    height: fit-content;
 }
+
 
 footer{
     padding: var(--default-spacing);
     background: var(--white);
+    display: flex;
+    height: fit-content;
+}
+
+
+.description-and-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--base);
+    width: 25%;
+    padding: 0 2rem;
+}
+
+.footer-logo-img{
+    color: var(--base);
+}
+
+.footer-logo-text{
+    color: var(--base);
+}
+
+.footer-description{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    width: 30ch;
+    padding-top: 2vw;
+}
+
+.site-links-section{
+    width: 20%;
+    padding: 0 2rem;
+}
+
+.footer-header{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--base);
+    padding-bottom: 2vw;
+}
+
+.site-links{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1vw;
+}
+
+.site-links > .nav-item{
+    padding: 0;
+}
+
+.site-links > .nav-item > a{
+    color: var(--base);
+}
+
+.contact-info{
+    width: 30%;
+}
+
+.contact-method{
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-method-heading{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--base);
+} 
+
+.contact-method-description > a{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--base);
+}
+
+.social-media-container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-media-container > a > i{
+    color: var(--base);
+    font-size: 30px;
+}
+
+.footer-map{
+    width: 25%;
+}
+
+.footer-map > iframe{
+    min-width: 250px;
 }
 
 @media only screen and (max-width: 1100px){
@@ -437,6 +543,52 @@ footer{
     .trips-right{
         width: 100%;
     }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .site-links > .nav-item:first-of-type{
+        padding-top: 0;
+    }
+
+    .site-links-section{
+        min-width: 275px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: var(--default-spacing) 0;
+        text-align: center;
+    }
+
+    .footer-header{
+        text-align: center;
+    }
+
+    .contact-info{
+        min-width: 275px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: var(--default-spacing);
+    }
+
+    .contact-method{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-map{
+        min-width: 275px;
+    } 
 }
 
 @media only screen and (max-width: 510px){
