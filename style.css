@@ -40,6 +40,7 @@ button {
     font-weight: 700;
     font-size: clamp(14px, 1vw, 1.6rem);
     padding: clamp(10px, 1vw, 1.5rem) clamp(1rem, 1.3vw, 2rem);
+    animation: left-to-right 1s ease-in-out;
 }
 
 button > a{
@@ -50,6 +51,7 @@ nav{
     display: flex;
     justify-content: space-between; 
     padding: 3vw var(--default-spacing);
+    animation: top-to-bottom 1s ease-in-out;
 }
 
 .hero{
@@ -125,7 +127,7 @@ nav{
     font-size: clamp(2rem, 3.3vw, 5rem);
     line-height: 4rem;
     color: var(--white); 
-
+    animation: left-to-right 1s ease-in-out;
 }
 
 .hero-description{
@@ -135,6 +137,7 @@ nav{
     font-size: clamp(14px, 1vw, 1.5rem);
     color: var(--white);
     padding: 1.5rem 0;
+    animation: left-to-right 1s ease-in-out;
 }
 
 .hero-right{
@@ -146,6 +149,43 @@ nav{
 .hero-right > img{
     width: 80%;
     transform: scaleX(-1); 
+    animation: right-to-left 1s ease-in-out;
+}
+
+@keyframes right-to-left {
+    0%{
+        transform: translateX(100%);
+        opacity: 0
+    }
+
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes top-to-bottom{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes left-to-right{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 .inner-cursor{
@@ -319,7 +359,7 @@ nav{
     justify-content: center;
     padding: var(--default-spacing);
     background-color: var(--base-lighter);
-    gap: 10rem;
+    gap: 8rem;
 }
 
 .benefits-card{
@@ -480,6 +520,10 @@ footer{
 }
 
 @media only screen and (max-width: 1100px){
+    body{
+        overflow-x: hidden;
+    }
+    
     .hero-main{
         flex-direction: column;
     }
@@ -513,6 +557,7 @@ footer{
         justify-content: flex-start;
         gap: 3rem;
         transition: all 1s ease;
+        z-index: 1000;
     }
     .nav-item:first-of-type{
         padding-top: 10vw;
@@ -623,5 +668,52 @@ footer{
     .hero-right > img{
         width: 90vw;
         height: 100%;
+    }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.testimonial-card:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.testimonial-card:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.testimonial-card:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.benefits-card:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.benefits-card:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.benefits-card:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.hero-button .hidden{
+    transition-delay: 200ms;
+}
+
+@media (prefers-reduced-motion){
+    .hidden{
+        transition: none;
     }
 }
