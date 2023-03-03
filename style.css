@@ -347,7 +347,7 @@ nav ul{
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(0.8rem, 1.5vw, 2rem);
+    font-size: clamp(0.9rem, 1vw, 2rem);
     padding-bottom: 2vw;
 }
 
@@ -779,7 +779,7 @@ footer{
     flex-direction: column;
     gap: 2rem;
     width: 300px;
-    height: 450px;
+    height: 550px;
     background-color: var(--white);
 }
 
@@ -787,7 +787,7 @@ footer{
     display: flex;
     justify-content: center;
     height: 50%;
-    background-image: url("https://via.placeholder.com/300x225");
+    background-image: url("https://via.placeholder.com/300x275");
     background-size: cover;
 }
 
@@ -804,6 +804,11 @@ footer{
 .person-name{
     font-weight: 700;
     font-size: 20px;
+}
+
+.person-role{
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .person-details-description{
@@ -884,7 +889,7 @@ footer{
     position: absolute;
     border-radius: 50%;
     right: -20px;
-    top: 32px;
+    top: 70px;
     z-index: 10;
 }
 
