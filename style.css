@@ -271,6 +271,23 @@ nav ul{
     background-size: cover;
 }
 
+.ankit-panja{
+    background-image: url("./assets/john_doe.jpg");
+}
+
+.prasanna-patil{
+    background-image: url("https://images.pexels.com/photos/8191999/pexels-photo-8191999.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.saakshith-chikoti{
+    background-image: url("https://i.pinimg.com/736x/e6/42/07/e642073c7105be0bfce8eff426bb0365.jpg");
+}
+
+.sathvik-kotapati{
+    background-image: url("https://th.bing.com/th/id/R.122d6f9c5ddc44c2e645474ce885fa31?rik=cfNAg02mj5lB4g&pid=ImgRaw&r=0");
+    background-position: center;
+}
+
 .user-rating-container{
     display: flex;
     flex-direction: column;
@@ -791,6 +808,58 @@ footer{
     background-size: cover;
 }
 
+.john-smith{
+    background-image: url("https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.sarah-lee{
+    background-image: url("https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.tom-johnson{
+    background-image: url("https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-position: center;
+}
+
+.rachel-chen{
+    background-image: url("https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.michael-nguyen{
+    background-image: url("https://images.pexels.com/photos/13507981/pexels-photo-13507981.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.emily-kim{
+    background-image: url("https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.david-lee{
+    background-image: url("https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-position: center;
+}
+
+.maria-rodriguez{
+    background-image: url("https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.jack-collins{
+    background-image: url("https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.jane-kim{
+    background-image: url("https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-position: right;
+}
+
+.alex-nguyen{
+    background-image: url("https://images.pexels.com/photos/8192058/pexels-photo-8192058.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.lily-chen{
+    background-image: url("https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-position: right;
+}
+
 .person-details{
     height: 50%;
     display: flex;
@@ -988,7 +1057,7 @@ small{
 }
 
 /* Vehicles Page */ 
-
+/* 
 .vehicles{
     height: 100vh;
     padding: 0 2rem var(--default-spacing);
@@ -1008,6 +1077,20 @@ small{
     transform: translate(-50%, -50%);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
     background: red;
+} */
+
+.vehicles{
+    display: flex;
+    padding: var(--default-spacing) var(--default-spacing);
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.vehicle{
+    width: 300px;
+    min-width: 300px;
 }
 
 .vehicle img{
@@ -1037,11 +1120,15 @@ small{
     text-align: center;
 }
 
+.vehicle-content > p{
+    font-size: 12px;
+}
+
 .vehicle:hover .vehicle-overlay{
     opacity: 0.8;
 }
 
-@media only screen and (max-width:1100px){
+/* @media only screen and (max-width:1100px){
     .vehicles{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1051,7 +1138,7 @@ small{
     .vehicles{
         grid-template-columns: 1fr;
     }
-}
+} */
 
 /* Contact Section */
 

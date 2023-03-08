@@ -31,23 +31,32 @@
         </div>
     </nav>
     <div class="contact">
-        <div class="contact-form-image hidden"></div>
+        <div class="contact-form-image hidden">
+            <iframe
+            width="100%"
+            height="100%"
+            frameborder="0" style="border:0"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBC4UJkv5-2PbhkRi8SfVWRxBMUucpZniI&q=Eiffel+Tower,Paris+France"
+            allowfullscreen>
+            </iframe>
+        </div>
         <div class="contact-form hidden">
             <div class="section-header-container">
                 <h2 class="section-header">Contact Us</h2>
             </div>
-            <form action="" name="contact" netlify>
+            <form action="https://formsubmit.co/saaks0524@gmail.com" method="POST">
                 <div class="contact-form-section hidden">
                     <label for="">First Name</label>
-                    <input type="text" name="" id="" placeholder="John"/>
+                    <input type="text" name="first-name" id="" placeholder="John"/>
                 </div>
                 <div class="contact-form-section hidden">
                     <label for="">Last Name</label>
-                    <input type="text" name="" id="" placeholder="Doe"/>
+                    <input type="text" name="last-name" id="" placeholder="Doe"/>
                 </div>
                 <div class="contact-form-section hidden">
                     <label for="">Email</label>
-                    <input type="email" name="" id="" placeholder="someone@example.com"/>
+                    <input type="email" name="email" id="" placeholder="someone@example.com"/>
                 </div>
                 <!-- <div class="contact-form-section hidden">
                     <label for="">Phone Number</label>
@@ -55,7 +64,7 @@
                 </div> -->
                 <div class="contact-form-section hidden">
                     <label for="">Message</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Hey, what's up"></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Hey, what's up"></textarea>
                 </div>
                 <a href=""><button type="submit" class="hidden form-submit">Send Message</button></a>
             </form>
