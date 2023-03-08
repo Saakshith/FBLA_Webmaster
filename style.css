@@ -16,15 +16,16 @@
     padding: 0;
 }
 
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
-    overflow-x: hidden;
     background-color: black;
     color: var(--white);
     cursor: none;
+    overflow-x: hidden !important;
 }
 
 
@@ -1209,11 +1210,12 @@ textarea{
 
 @media only screen and (max-width: 768px){
     .contact{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .contact-form-image{
         width: 100%;
     }
+
     .contact-form{
         width: 100%;
     }
