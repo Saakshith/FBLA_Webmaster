@@ -252,8 +252,8 @@ nav ul{
 }
 
 .testimonial-card{
-    width: 300px;
-    height: 400px;
+    width: 330px;
+    height: 450px;
     background-color: var(--white);
 }
 
@@ -273,11 +273,12 @@ nav ul{
 }
 
 .ankit-panja{
-    background-image: url("./assets/john_doe.jpg");
+    background-image: url("https://cdn.discordapp.com/attachments/1030294261423415296/1082917778786365540/9k.png");
+    background-position: center;
 }
 
 .prasanna-patil{
-    background-image: url("https://images.pexels.com/photos/8191999/pexels-photo-8191999.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-image: url("https://cdn.discordapp.com/attachments/1030294261423415296/1082917107206996019/images.png");
 }
 
 .saakshith-chikoti{
@@ -285,7 +286,7 @@ nav ul{
 }
 
 .sathvik-kotapati{
-    background-image: url("https://th.bing.com/th/id/R.122d6f9c5ddc44c2e645474ce885fa31?rik=cfNAg02mj5lB4g&pid=ImgRaw&r=0");
+    background-image: url("https://cdn.discordapp.com/attachments/1030294261423415296/1082916946250580008/outerbanks-ages03.png");
     background-position: center;
 }
 
